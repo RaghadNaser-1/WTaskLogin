@@ -1,0 +1,28 @@
+﻿@page
+@model WTaskLogin.Pages.welcomeUserModel
+@{
+    ViewData["Title"] = "welcome";
+}
+<div class="text-center">
+    <h1 class="display-4">welcome user</h1>
+    <div class="d-flex justify-content-around mt-3">
+
+  <div class="card" style="width: 18rem;">
+   <div class="card-body">
+    <h5 class="card-title">Students List</h5>
+    <p class="card-text">You can view Students list and update it</p>
+    <a class="btn btn-primary" asp-area="" asp-page="/Students/index">Students List</a>
+
+   </div>
+  </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Classes List</h5>
+            <p class="card-text">You can view Classes list and update it</p>
+            <a class="btn btn-primary" asp-area="" asp-page="/Rooms/index">Classes List</a>
+
+        </div>
+    </div>
+    </div>
+</div>
